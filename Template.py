@@ -30,11 +30,11 @@ list_of_files = [
 ]
 
 for filepath in list_of_files:
-    filepath= Path(filepath)
-    filedir, filename= os.path.split(filepath)
+    filepath = Path(filepath)
+    filedir, filename = os.path.split(filepath)
     if filedir != "":
-        os.makedirs(filedir, exist_ok = True)
+        os.makedirs(filedir, exist_ok=True)
 
-    if (not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
-        with open(filepath, "W") as f:
-            pass # creates an empty file
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
+        with open(filepath, "w") as f:
+            pass # create an empty file
