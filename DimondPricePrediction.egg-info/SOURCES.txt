@@ -13,6 +13,8 @@ src/components/data_ingestion.py
 src/components/data_transformation.py
 src/components/model_evaluation.py
 src/components/model_trainer.py
+src/logger/__init__.py
+src/logger/logging.py
 src/pipeline/__init__.py
 src/pipeline/prediction_pipeline.py
 src/pipeline/training_pipeline.py

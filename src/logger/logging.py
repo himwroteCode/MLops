@@ -11,11 +11,8 @@ os.makedirs(log_path,exist_ok=True)
 LOG_FILEPATH=os.path.join(log_path,LOG_FILE)
 print(LOG_FILEPATH)
 
-logging.basicConfig(level=logging.info, 
+logging.basicConfig(level=logging.INFO,
                     filename=LOG_FILEPATH,
-                    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
-                    
+                    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s",
+                    force = True                    
 )
-#[2024-01-10 15:57:26,997] 6 root - INFO -  this my second tesgting
-
-logging.info("this is my first run of the data ingestion line")
